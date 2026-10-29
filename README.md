@@ -20,22 +20,22 @@ npm run build
 
 ## Publicar no GitHub Pages
 
-O repositório público é [`cacnew/saralu-doces-artesanais`](https://github.com/cacnew/saralu-doces-artesanais). O GitHub Pages publica a pasta `docs/` da branch `main`.
+O site usa [`saraludocesartesanais.com`](https://saraludocesartesanais.com). O repositório público é [`cacnew/saralu-doces-artesanais`](https://github.com/cacnew/saralu-doces-artesanais), e o GitHub Pages publica a pasta `docs/` da branch `main`.
 
 Para publicar alterações, execute na raiz do projeto:
 
 ```powershell
-$env:NEXT_PUBLIC_BASE_PATH = '/saralu-doces-artesanais'
-$env:NEXT_PUBLIC_SITE_URL = 'https://cacnew.github.io/saralu-doces-artesanais'
 npm run build
+Get-ChildItem -LiteralPath docs -Force | Remove-Item -Recurse -Force
 Copy-Item -Path out\* -Destination docs -Recurse -Force
+Set-Content -LiteralPath docs\CNAME -Value 'saraludocesartesanais.com' -NoNewline
 New-Item -Path docs\.nojekyll -ItemType File -Force | Out-Null
 git add .
 git commit -m 'Atualizar site'
 git push
 ```
 
-Ao trocar imagens ou remover páginas, limpe antes o conteúdo antigo de `docs/` para não manter arquivos obsoletos. A publicação ocorre após o envio para `main`.
+O build usa `basePath` vazio e metadados de `https://saraludocesartesanais.com`. A limpeza de `docs/` remove arquivos obsoletos; os comandos recriam `CNAME` e `.nojekyll` antes do commit. A publicação ocorre após o envio para `main`.
 
 ## Alterar conteúdo
 

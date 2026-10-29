@@ -1,14 +1,14 @@
 # Continuidade do site SaraLu
 
-Atualizado em 13/10/2026.
+Atualizado em 28/10/2026.
 
 ## Estado atual
 
-- Site: https://cacnew.github.io/saralu-doces-artesanais/
+- Site: https://saraludocesartesanais.com/
 - Repositório: https://github.com/cacnew/saralu-doces-artesanais
-- Branch de origem: `main`; GitHub Pages publica `/docs`.
+- Branch de origem: `main`; GitHub Pages publica `/docs` com `CNAME` para `saraludocesartesanais.com`.
 - Aplicação Next.js 16 com App Router, TypeScript, Tailwind CSS, exportação estática e sem banco de dados.
-- O site foi publicado e verificado com resposta HTTP 200 para página, logo, imagem principal e CSS; os links do WhatsApp e Instagram estavam presentes na página.
+- A exportação estática em `docs/` usa caminhos a partir da raiz do domínio, sem `basePath`.
 
 ## Onde editar
 

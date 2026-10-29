@@ -1,4 +1,4 @@
-:HL["/saralu-doces-artesanais/_next/static/chunks/14k-v7-yqkcsh.css","style"]
+:HL["/_next/static/chunks/28-45rbf781vg.css","style"]
 2:[["children",{"s":"__PAGE__","h":160}]]
 1:[["children",{"s":"/_not-found","h":96,"c":"$Q2"}]]
-0:{"b":"65KYh8DLqHa4Zs9-6CLs7","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"E2gvV3-37AfXB4fmjMqp_","t":{"t":{"s":"","h":80,"c":"$Q1"}}}

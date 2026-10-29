@@ -6,7 +6,7 @@ const title = "SaraLu Doces Artesanais | Doces feitos com carinho";
 const description = "Brigadeiros, brownies, bolos e outras delícias artesanais. Encomende pelo WhatsApp com a SaraLu em Brasília e entorno.";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
+  metadataBase: new URL("https://saraludocesartesanais.com"),
   title,
   description,
   openGraph: {

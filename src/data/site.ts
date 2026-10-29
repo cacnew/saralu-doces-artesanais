@@ -53,5 +53,5 @@ export function whatsappUrl(message: string): string {
 }
 
 export function asset(path: string): string {
-  return `${process.env.NEXT_PUBLIC_BASE_PATH || ""}${path}`;
+  return path;
 }
